@@ -1,0 +1,143 @@
+main{
+    padding: 0px;
+}
+h1.sub-titulo{
+    font-size: x-large;
+    font-weight: bold;
+    color: gray;
+}
+#links-ancora{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+#links-ancora nav{
+    width: 497px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#links-ancora a{
+    color: rgb(60, 60, 60);
+    border-bottom: 2px solid #00CAD1;
+}
+#links-ancora a:hover{
+    color: #0D6E71;
+}
+section article{
+    display: flex;
+    justify-content: center;
+}
+article{
+    width: 100%;
+}
+article img{
+    width: 280px;
+    height: 220px;
+}
+article table{
+    width: 728px;
+    height: 200px;
+}
+table{
+    border-collapse: collapse;
+    display: flex;
+    flex-flow: row wrap;
+}
+thead{
+    width: 728px;
+    height: 30px;
+    display: flex;
+    background-color: #00CAD1;
+}
+thead tr{
+    width:100%;
+}
+thead tr th{
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    width: 248px;
+    height: 100%;
+    color: white;
+}
+tbody{
+    width: 728px;
+    height: 170px;
+}
+tbody tr{
+    width: 100%;
+}
+tbody tr{
+    height: 63.3px;
+}
+tbody tr.tr-geriatria{
+    height: 47.5px;
+}
+tbody tr.tr-fisioterapia{
+    height: 38px;
+}
+tbody tr:nth-child(2n+1){
+    background-color: rgb(214, 214, 214);
+}
+tbody tr td{
+    padding-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    width: 248px;
+}
+footer div{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 130px;
+}
+@media all and (max-width:1024px){
+    article{
+        height: 200px;
+    }
+    article img{
+        width: 209.168px;
+        height: 190px;
+    }
+    article table{
+        width: 533.8px;
+        height: 200px;
+    }
+    tbody tr{
+        height: 53.3px;
+    }
+    tbody tr.tr-geriatria{
+        height: 40px;
+    }
+    tbody tr.tr-fisioterapia{
+        height: 32px;
+    }
+}
+@media all and (max-width:768px){
+    div#links-ancora nav{
+        width: 100%;
+    }
+    div#links-ancora a{
+        padding: 3px;
+    }
+    thead{
+        width: 100%;
+    }
+    article img{
+        display: none;
+    }
+    article table{
+        width: 100%;
+    }
+    tbody{
+        width: 100%;
+    }
+}
+@media all and (max-width:425px){
+    div#links-ancora nav{
+        margin-top: 29px;
+    }
+}

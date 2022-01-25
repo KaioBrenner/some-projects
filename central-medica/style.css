@@ -1,0 +1,321 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Sans Pro";
+}
+/***Cabeçalho***/
+header{
+    height: 50px;
+    width: 100%;
+    background: #00CAD1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+
+}
+header .container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.container{
+    height: 100%;
+    width: 1024px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    width: 7em;
+    height: 3.5em;
+    margin-right: 50%;
+}
+nav{
+    width: 25%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 3%;
+}
+nav a:hover{
+    color: #006669;
+}
+/***Conteúdo***/
+main{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+main .container{
+    width: 1024px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+#banner-box{
+    height: 400px;
+}
+#banner{
+    background-image: url(assets/assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: 122.7%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+#banner .container{
+    width: 1024px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container h1{
+    color: white;
+    font-weight: normal;
+    font-size: 2em;
+}
+section{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-titulo{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.sub-titulo:not(#last-sub-titulo) p{
+    text-align: center;
+    width: 615px;
+    margin: 15px 0px 42px 0px;
+}
+#last-sub-titulo p{
+    text-align: center;
+    width: 615px;
+    margin-top: 10px;
+}
+section:last-of-type p{
+    margin-bottom: 2px;
+}
+#lista-sobre{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+#lista-sobre h3{
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom:10px;
+}
+ul li{
+    text-align: left;
+}
+.container:first-child:not(header) img{
+    float: left;
+}
+.container:first-child ul{
+    float: right;
+}
+section:nth-of-type(2){
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+#div-especialidade img{
+    width: 18em;
+    height: 13em;
+}
+#div-especialidade{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.box-especialidade{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 18em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px black;
+    margin: 20px 10px 0px;
+}
+figcaption{
+    width: 18em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+figcaption p{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+section a{
+    width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    margin: 35px;
+    background-color: #00CAD1;
+}
+iframe{
+    margin-top: 20px;
+    width: 97%;
+    height: 350px;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #0C6E71;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+footer img{
+    height: 5em;
+    width: 10em;
+}
+/***Responsivo***/
+@media all and (max-width:1024px){
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        padding: 0px 5px;
+    }
+    nav{
+        width: 250px;
+        font-size: 16px;
+    }
+    #banner-box{
+        max-height: 300px;
+    }
+    iframe{
+        width: 98%;
+        margin: 20px 10px 0px;
+    }
+    section{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    section .box-especialidade{
+        width: 33.3%;
+    }
+    #div-especialidade img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+    figcaption{
+        width: 100%;
+    }
+}
+@media all and (max-width:768px){
+    *{
+        font-size: 15px;
+    }
+    .container{
+        max-width: 768px;
+        width: 100%;
+    }
+    #banner-box{
+        max-height: 217px;
+    }
+    .sub-titulo:not(#last-sub-titulo) p{
+        width: 100%;
+    }
+    #last-sub-titulo p{
+        width: 100%;
+    }
+    #div-especialidade{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    section .box-especialidade{
+        min-width: 60%;
+    }
+    figcaption{
+        height: 3em;
+    }
+    #lista-sobre img{
+        display: none;
+    }
+}
+@media all and (max-width:425px){
+    *{
+        font-size: 13px;
+    }
+    .container{
+        max-width: 425px;
+        width: 100%;
+    }
+    header{
+        height: 100px;
+    }
+    header .container{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    header img{
+        padding-top: 10px;
+        width: 8em;
+        height: 4em;
+    }
+    nav{
+        width: 90%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top: 1px solid #00a8ad;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a{
+        font-size: 16px;
+    }
+    #banner{
+        margin-top: 100px;
+    }
+    #banner-box{
+        max-height: 162px;
+    }
+    section .box-especialidade{
+        min-width:80%;
+    }
+    figcaption{
+        height: 2.5em;
+    }
+}
